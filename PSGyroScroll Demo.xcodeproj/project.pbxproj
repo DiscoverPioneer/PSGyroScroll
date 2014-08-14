@@ -19,6 +19,9 @@
 		E3EB287C199AAE5D00B0C9F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB2864199AAE5D00B0C9F0 /* UIKit.framework */; };
 		E3EB2884199AAE5E00B0C9F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3EB2882199AAE5E00B0C9F0 /* InfoPlist.strings */; };
 		E3EB2886199AAE5E00B0C9F0 /* PSGyroScroll_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2885199AAE5E00B0C9F0 /* PSGyroScroll_DemoTests.m */; };
+		E3EB2892199AAE8600B0C9F0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2890199AAE8600B0C9F0 /* HomeViewController.m */; };
+		E3EB2893199AAE8600B0C9F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EB2891199AAE8600B0C9F0 /* HomeViewController.xib */; };
+		E3EB2896199AAEDF00B0C9F0 /* PSGyroScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EB2895199AAEDF00B0C9F0 /* PSGyroScroll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		E3EB2881199AAE5E00B0C9F0 /* PSGyroScroll DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSGyroScroll DemoTests-Info.plist"; sourceTree = "<group>"; };
 		E3EB2883199AAE5E00B0C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E3EB2885199AAE5E00B0C9F0 /* PSGyroScroll_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSGyroScroll_DemoTests.m; sourceTree = "<group>"; };
+		E3EB288F199AAE8600B0C9F0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E3EB2890199AAE8600B0C9F0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E3EB2891199AAE8600B0C9F0 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E3EB2894199AAEDF00B0C9F0 /* PSGyroScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGyroScroll.h; sourceTree = "<group>"; };
+		E3EB2895199AAEDF00B0C9F0 /* PSGyroScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGyroScroll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			children = (
 				E3EB286F199AAE5D00B0C9F0 /* AppDelegate.h */,
 				E3EB2870199AAE5D00B0C9F0 /* AppDelegate.m */,
+				E3EB288F199AAE8600B0C9F0 /* HomeViewController.h */,
+				E3EB2890199AAE8600B0C9F0 /* HomeViewController.m */,
+				E3EB2891199AAE8600B0C9F0 /* HomeViewController.xib */,
+				E3FDA292199D4113007132CF /* PSGyroScroll */,
 				E3EB2872199AAE5D00B0C9F0 /* Images.xcassets */,
 				E3EB2867199AAE5D00B0C9F0 /* Supporting Files */,
 			);
@@ -142,6 +154,15 @@
 				E3EB2882199AAE5E00B0C9F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3FDA292199D4113007132CF /* PSGyroScroll */ = {
+			isa = PBXGroup;
+			children = (
+				E3EB2894199AAEDF00B0C9F0 /* PSGyroScroll.h */,
+				E3EB2895199AAEDF00B0C9F0 /* PSGyroScroll.m */,
+			);
+			name = PSGyroScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			files = (
 				E3EB286B199AAE5D00B0C9F0 /* InfoPlist.strings in Resources */,
 				E3EB2873199AAE5D00B0C9F0 /* Images.xcassets in Resources */,
+				E3EB2893199AAE8600B0C9F0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EB2896199AAEDF00B0C9F0 /* PSGyroScroll.m in Sources */,
 				E3EB2871199AAE5D00B0C9F0 /* AppDelegate.m in Sources */,
 				E3EB286D199AAE5D00B0C9F0 /* main.m in Sources */,
+				E3EB2892199AAE8600B0C9F0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +463,7 @@
 				E3EB288B199AAE5E00B0C9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3EB288C199AAE5E00B0C9F0 /* Build configuration list for PBXNativeTarget "PSGyroScroll DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +472,7 @@
 				E3EB288E199AAE5E00B0C9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

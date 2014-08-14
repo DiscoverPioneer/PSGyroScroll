@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E3EB285C199AAE5D00B0C9F0"
+               BuildableName = "PSGyroScroll Demo.app"
+               BlueprintName = "PSGyroScroll Demo"
+               ReferencedContainer = "container:PSGyroScroll Demo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -12,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E3EB2877199AAE5D00B0C9F0"
+               BuildableName = "PSGyroScroll DemoTests.xctest"
+               BlueprintName = "PSGyroScroll DemoTests"
+               ReferencedContainer = "container:PSGyroScroll Demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E3EB285C199AAE5D00B0C9F0"
+            BuildableName = "PSGyroScroll Demo.app"
+            BlueprintName = "PSGyroScroll Demo"
+            ReferencedContainer = "container:PSGyroScroll Demo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E3EB285C199AAE5D00B0C9F0"
+            BuildableName = "PSGyroScroll Demo.app"
+            BlueprintName = "PSGyroScroll Demo"
+            ReferencedContainer = "container:PSGyroScroll Demo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E3EB285C199AAE5D00B0C9F0"
+            BuildableName = "PSGyroScroll Demo.app"
+            BlueprintName = "PSGyroScroll Demo"
+            ReferencedContainer = "container:PSGyroScroll Demo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
