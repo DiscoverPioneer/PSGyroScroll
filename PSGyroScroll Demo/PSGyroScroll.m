@@ -15,14 +15,14 @@
     CMMotionManager *_motionManager;
 }
 
-@property NSUInteger resistance;
+@property long resistance;
 @property CGPoint offset;
 
 @end
 
 @implementation PSGyroScroll
 
-- (id)initWithView:(UIScrollView *)view resistance:(NSUInteger)resistance andOffset:(CGPoint)offset {
+- (id)initWithView:(UIScrollView *)view resistance:(long)resistance andOffset:(CGPoint)offset {
     self = [super init];
     if (self) {
         self.resistance = resistance;
@@ -44,19 +44,20 @@
         [_motionManager startDeviceMotionUpdatesToQueue: [NSOperationQueue mainQueue]
             withHandler:^(CMDeviceMotion *motion, NSError *error) {
                CMAttitude *attitude = motion.attitude;
-               long speed = degrees(attitude.pitch)/self.resistance;
-               long xOff = self.view.contentOffset.x;
-               long yOff = 0 ;
+               //long speed = degrees(attitude.pitch)/self.resistance;
 
-               if (degrees(attitude.pitch) > 40) {
-                   yOff = self.view.contentOffset.y + speed;
-                   //NSLog(@"%f",degrees(attitude.pitch)  );
+                
+            long xOff = self.view.contentOffset.x;
+            long yOff = 0.000;
+               if (degrees(attitude.pitch) > 40.00) {//Scroll Down
+                   yOff = self.view.contentOffset.y + degrees(attitude.pitch)/self.resistance;
                }
-               else if (degrees(attitude.pitch < 0)) {
-                   yOff = self.view.contentOffset.y + speed;
+               else if (degrees(attitude.pitch) < 0.00) {//Scroll back up
+                   yOff = self.view.contentOffset.y + degrees(attitude.pitch)/self.resistance;
                }
-               if ([self shouldScrollToOffset:CGPointMake(xOff, yOff)] && yOff != 0) {
+               if ([self shouldScrollToOffset:CGPointMake(xOff, yOff)] && yOff != 0) {//Do the actual Scrolling
                    [self.view setContentOffset:CGPointMake(xOff, yOff)];
+                   NSLog(@"%ld",yOff);
                }
             }];
     }

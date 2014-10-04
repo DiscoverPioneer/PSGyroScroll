@@ -10,7 +10,7 @@
 
 @interface PSGyroScroll : NSObject
 
-- (id)initWithView:(UIScrollView *)view resistance:(NSUInteger)resistance andOffset:(CGPoint)offset;
+- (id)initWithView:(UIScrollView *)view resistance:(long)resistance andOffset:(CGPoint)offset;
 
 - (void)startGyro;
 - (void)stopGyro;
